@@ -1,0 +1,202 @@
+*{
+	
+	padding: 0px;
+	margin: 0px;
+
+}
+
+
+.container-fluid{
+	background-color: #abd;
+	width: 100%;
+	height:100%;
+}
+
+
+.container{
+	 background: #ccc;
+	 border:1px solid black;
+	 width: 100%;
+	 height: auto;
+	 }
+
+ /**/
+#nav-bar{
+    width: 100%;
+    height:auto;
+    background-color: #80bfff;
+    display: flex;
+    /*flex-direction: row;*/ 
+    /* justify-content: space-between;
+    align-items: center; */
+    flex-wrap:wrap;
+}
+
+#nav-bar li{
+    display: block;
+    float: left;
+    margin-left:22px;
+    line-height: 40px;
+     }
+     
+#nav-bar ul li a{
+    color: rgb(255, 255, 2);
+    text-decoration: none;
+}
+
+#nav-bar ul li:hover {
+           background-color: #cc4400;
+}
+
+#nav-bar .sub-menu {
+	list-style: none;
+    display:none;
+     animation-duration: 1s;
+      animation-name: slide;
+}
+
+#nav-bar li:hover .sub-menu{
+       display: block;
+}
+ 
+ #nav-bar .sub-menu li{
+ 	     margin:0px;
+ 	     padding:15px;
+ 	    /* float: left;*/
+ 	     display: inline-block;
+ 	     text-align: center;
+ 	     }
+
+/*#nav-bar li a:hover .sub-menu{
+
+}*/
+
+#nav-bar .sub-menu li a{
+       color: #000033;
+}
+
+#nav-bar .sub-menu li a:hover{
+    display:block;
+    background-color: #ffffe6;
+}
+
+@keyframes slide{
+    0%{
+      transform: rotateX(180deg);
+    }
+
+    100%{
+       transform: rotateX(0deg);
+    }
+}
+
+ /**/
+
+
+#carousel{
+	 padding: 10px;
+}
+
+#box{
+	padding: 10px;
+  height:400px;
+  width:100%;
+  overflow-y: scroll;
+  margin-left: 20px;
+
+}
+
+#box h4 a{
+      text-decoration: none;
+}
+
+.anmi{
+   animation: 1s anmi infinite;
+}
+
+@keyframes anmi{
+  from {color: red;}
+  to {color: green;}
+
+}
+#footer{
+	border-top: 2px solid;
+}
+
+#footerbox a{
+	font-size: 15px;
+}
+
+#footerbox2 a{
+	font-size: 18px;
+}
+
+#footerbox3 a{
+	  font-size: 20px;
+}
+
+#divbox{
+	background:#BC8F8F;
+	margin-top: 20px;
+	height: 50px;
+	font-size:20px;
+	line-height:40px;
+	padding: 10px;
+	text-decoration:none;
+	}
+
+.footerbox4 {
+	overflow-y: scroll;
+	background-color:lightgray;
+	height: 300px;
+	width: 100%;
+}
+
+.box5{
+	margin: 2px;
+	border:1px solid;
+	background:#ffe6e6;
+	font-size: 20px;
+}
+
+.box6{
+	margin: 1px;
+	border:1px solid;
+	background:#ffe6e6;
+	font-size: 20px;
+}
+
+.box7{
+	margin: 1px;
+	border:1px solid;
+	background:#ffe6e6;
+	font-size: 20px;
+}
+
+.footerbox5 a{
+	   font-size:20px;
+	   margin: 2px;
+}
+
+.footerbox6 a{
+	   font-size:20px;
+	   margin: 2px;
+}
+
+.footerbox7 a{
+	   font-size:20px;
+	   margin: 2px;
+}
+
+#footerbox8{
+	 background: purple;
+}
+
+#footerbox9{
+	color:black;
+	margin-left: 25px;
+}
+
+#footerbox9 input{
+	color: black;
+}
